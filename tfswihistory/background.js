@@ -21,14 +21,14 @@ chrome.contextMenus.onClicked.addListener(getClickHandler());
 chrome.runtime.onInstalled.addListener(function() {
   chrome.contextMenus.create({
     "id": "workitem_history_menu_id",
-    "title": "Get Azure DevOps Workitem History",
+    "title": "Get DevOps Workitem History",
     "type": "normal",
     "contexts": ["selection"]
   });
   
   /*chrome.contextMenus.create({
     "id": "workitem_links_menu_id",
-    "title": "Get Azure DevOps Workitem Links",
+    "title": "Get DevOps Workitem Links",
     "type": "normal",
     "contexts": ["selection"]
   });*/
