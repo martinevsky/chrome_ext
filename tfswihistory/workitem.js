@@ -106,8 +106,8 @@ function get_history_handler_new(tfs_url, wi_id, page_num, revisionsAutors, fiel
       var revision = obj.value[i].rev;
       revisionsAutors[i] = { author: fields['System.ChangedBy']['displayName'], dt: fields['System.ChangedDate'] };
   
-      //for each revision azure returns not all fields
-      //in case when field became undefinded, azure do not returns it in fields revision list
+      //for each revision the API returns not all fields
+      //in case when field became undefined, the API does not return it in fields revision list
       //so we should iterate through all fields wich we met in the previous revisions
       for (const [name, value] of Object.entries(fields)) {
         all_possible_fileds_names.add(name);

@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name" : "Azure DevOps workitem info",
+  "name" : "DevOps workitem info",
   "author" : "atotmakov",
   "version" : "0.0.0.12",
-  "description" : "Get info for Azure DevOps workitems, including history data",
+  "description" : "Get info for DevOps workitems, including history data",
   "background" : { "service_worker": "background.js" },
   "content_scripts": [
     {
@@ -39,6 +39,6 @@
   "action": {
     "default_icon": "img/icon16.png",
     "default_popup": "popup/index.html",
-    "default_title": "Azure DevOps workitem info"
+    "default_title": "DevOps workitem info"
   }
 }
